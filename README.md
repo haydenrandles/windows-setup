@@ -1,3 +1,5 @@
+This is a fork from FlipperPA. Edited to add some apps via chocolatey
+
 # windows-setup
 
 A PowerShell script to set up a fresh Windows install with the settings I prefer, and remove crapware. You shouldn't run scripts like this without understanding what they do, or if you know and trust the author. This is mainly here for when I'm setting up Windows for a friend, and want a quick setup without the crapware.
@@ -11,7 +13,7 @@ A PowerShell script to set up a fresh Windows install with the settings I prefer
 Be sure you have installed *all* Windows updates to be current. If you are installing fresh, read about how to install with a local account only below.
 
 ```powershell
-Invoke-WebRequest https://raw.githubusercontent.com/FlipperPA/windows-setup/main/windows-11-setup.ps1 -OutFile windows-setup.ps1
+Invoke-WebRequest https://raw.githubusercontent.com/haydenrandles/windows-setup/main/windows-11-setup.ps1 -OutFile windows-setup.ps1
 Set-ExecutionPolicy -Force Bypass
 .\windows-setup.ps1
 Set-ExecutionPolicy -Force RemoteSigned
@@ -40,7 +42,7 @@ The PowerShell script above is a good start, but [the ShutUp application](https:
 Start up PowerShell as an admin, then run the follow commands to run the script:
 
 ```powershell
-Invoke-WebRequest https://raw.githubusercontent.com/FlipperPA/windows-setup/main/windows-10-setup.ps1 -OutFile windows-setup.ps1
+Invoke-WebRequest https://raw.githubusercontent.com/haydenrandles/windows-setup/main/windows-10-setup.ps1 -OutFile windows-setup.ps1
 Set-ExecutionPolicy -Force Bypass
 .\windows-setup.ps1
 Set-ExecutionPolicy -Force RemoteSigned
